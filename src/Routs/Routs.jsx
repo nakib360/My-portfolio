@@ -30,10 +30,10 @@ const rout = createBrowserRouter([
                 path: "/projects",
                 element: <Projects/>
             },
-            {
-                path: "/experience",
-                element: <Experience/>
-            },
+            // {
+            //     path: "/experience",
+            //     element: <Experience/>
+            // },
             {
                 path: "/services",
                 element: <Services/>
