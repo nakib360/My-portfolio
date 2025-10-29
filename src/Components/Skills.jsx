@@ -78,7 +78,7 @@ const Skills = () => {
                             key={idx}
                             whileHover={{ y: -10 }}
                             transition={{ type: "spring", stiffness: 300 }}
-                            className={`w-15 md:w-20 filter transition-shadow duration-300 hover:drop-shadow-[0_0_30px_rgb(59,130,246)]`}
+                            className={`${skill.img === axios ? "w-11 md:w-16" : "w-15 md:w-20"} filter transition-shadow duration-300 hover:drop-shadow-[0_0_30px_rgb(59,130,246)]`}
                             src={skill.img}
                             alt={skill.name}
                         />
