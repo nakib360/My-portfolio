@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
 import { Link, NavLink } from "react-router";
-import nakib360Logo from "../assets/Nakib-Logo2.png"
+import nakib360Logo from "../assets/NakibLogo.svg"
 // eslint-disable-next-line
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -23,9 +23,9 @@ const Header = () => {
 
 
     return (
-        <div className="p-4">
+        <div className="p-4 pt-0 md:pt-4">
             <div className=" flex items-center gap-2 justify-between">
-                <motion.img initial={{ opacity: 0, filter: "blur(10px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} transition={{ duration: 1, delay: 0.3 }} viewport={{ once: true }} className="w-20 h-10 object-cover" src={nakib360Logo} alt="" />
+                <motion.img initial={{ opacity: 0, filter: "blur(10px)" }} whileInView={{ opacity: 1, filter: "blur(0px)" }} transition={{ duration: 1, delay: 0.3 }} viewport={{ once: true }} className="w-15 md:w-20 object-cover" src={nakib360Logo} alt="" />
                 <motion.div initial="hidden" whileInView="visible" transition={{ staggerChildren: 0.1 }} viewport={{ once: true }} className="hidden md:flex items-center gap-5 cursor-pointer font-bold">
                     {
                         navLinks.map((nav, idx) => (
