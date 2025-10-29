@@ -1,0 +1,83 @@
+{
+  "personalInfo": {
+    "name": "Nakib Uddin",
+    "title": "Frontend Developer",
+    "email": "nakib@example.com",
+    "phone": "+880123456789",
+    "location": "Chittagong, Bangladesh",
+    "website": "https://nakibportfolio.com",
+    "about": "I am a passionate frontend developer with experience in React, TailwindCSS, and building responsive web applications. I love learning new technologies and creating smooth, interactive web experiences."
+  },
+  "skills": [
+    { "name": "HTML", "level": "Expert" },
+    { "name": "CSS", "level": "Expert" },
+    { "name": "JavaScript", "level": "Advanced" },
+    { "name": "React", "level": "Advanced" },
+    { "name": "TailwindCSS", "level": "Advanced" },
+    { "name": "Firebase", "level": "Intermediate" },
+    { "name": "Git & GitHub", "level": "Advanced" }
+  ],
+  "projects": [
+    {
+      "name": "Dream11 Style Cricket App",
+      "description": "A fantasy cricket team selection app with coins, player selection, and live scoring.",
+      "technologies": ["React", "Firebase", "TailwindCSS"],
+      "link": "https://example.com/dream11app"
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "My personal portfolio showcasing my projects, skills, and resume.",
+      "technologies": ["React", "TailwindCSS"],
+      "link": "https://nakibportfolio.com"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Honours in Statistics",
+      "institution": "Chittagong College",
+      "startYear": 2024,
+      "endYear": 2027,
+      "result": "In Progress"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Chittagong College",
+      "startYear": 2022,
+      "endYear": 2024,
+      "result": "GPA 5.0"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Frontend Developer Intern",
+      "company": "Example Tech",
+      "duration": "Jan 2025 - Present",
+      "responsibilities": [
+        "Building responsive web interfaces using React and TailwindCSS",
+        "Integrating Firebase for authentication and data storage",
+        "Collaborating with the team using Git and GitHub"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "React - The Complete Guide",
+      "issuer": "Udemy",
+      "year": 2025,
+      "link": "https://example.com/cert/react"
+    },
+    {
+      "title": "JavaScript Advanced Concepts",
+      "issuer": "Udemy",
+      "year": 2024,
+      "link": "https://example.com/cert/js"
+    }
+  ],
+  "contact": {
+    "email": "nakib@example.com",
+    "phone": "+880123456789",
+    "linkedin": "https://linkedin.com/in/nakib",
+    "github": "https://github.com/nakib",
+    "twitter": "https://twitter.com/nakib"
+  }
+}
