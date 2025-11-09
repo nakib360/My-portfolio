@@ -1,4 +1,4 @@
-import nakib from "../assets/Nakib.jpg"
+import nakib from "../assets/Nakib.png"
 import TypingText from "./ui/shadcn-io/typing-text";
 import { TextGenerateEffect } from "./ui/shadcn-io/text-generate-effect";
 import { ShineBorder } from "./ui/shine-border";
