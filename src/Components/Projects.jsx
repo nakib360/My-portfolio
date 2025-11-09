@@ -11,7 +11,7 @@ const Projects = () => {
 
     const projects = [
         { img: jobStock, repo: "https://github.com/nakib360/Jobstock-full-stack-website-.git", LiveLink: "https://job-stock-668d6.web.app", SiteName: "JOB-Stock", Description: "It's a full stack Website. It's a job submition and apply related website." },
-        { img: sportStore, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://sport-store-af469.web.app/", SiteName: "Sport Shop", Description: "It's a full stack Website. A men can find hare any type of sports equipment." },
+        { img: sportStore, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://sport-store-af469.web.app/", SiteName: "Sport Shop", Description: "It's a full stack Website. A men can find here any type of sports equipment." },
     ];
 
     return (

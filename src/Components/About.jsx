@@ -90,7 +90,7 @@ const About = () => {
                 <ShineBorder shineColor="blue" />
 
                 <TextGenerateEffect
-                    words="Hello, I’m Muhammad Nakib Uddin, also known as Nakib 360 — sounds cool, right? I’m a MERN Stack web developer from Bangladesh, and web development is my true passion. I have recently completed my web development training, and I’m currently a HSC candidate. These days, I write code every day to keep my skills sharp and consistent. I’m preparing for my future with dedication and aim to build a strong career in software engineering."
+                    words="Hello, I'm Muhammad Nakib Uddin, also known as Nakib 360 — sounds cool, right? I'm a MERN Stack web developer from Bangladesh, and web development is my true passion. I have recently completed my web development training, and I'm currently an HSC candidate. These days, I write code every day to keep my skills sharp and consistent. I'm preparing for my future with dedication and aim to build a strong career in software engineering."
                     duration={0.1}
                     staggerDelay={0.1}
                     filter={true}

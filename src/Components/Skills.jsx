@@ -14,25 +14,27 @@ import mongoDB from "../assets/mongodb.png";
 import github from "../assets/github.png";
 import netlify from "../assets/netlify.png";
 import gemini from "../assets/Gemini.png";
+import motionLogo from "../assets/motion.png"
 import tailwind from "../assets/Tailwind_CSS.png";
 import SkillItem from "./SkillItem";
 
 const Skills = () => {
     const skills = [
-        { pr: 40, img: html, name: "HTML", percentage: 90 },
-        { pr: 100, img: css, name: "CSS", percentage: 75 },
-        { pr: 120, img: js, name: "JS", percentage: 70 },
-        { pr: 20, img: axios, name: "Axios", percentage: 95 },
-        { pr: 28, img: jwt, name: "JWT", percentage: 92 },
-        { pr: 120, img: react, name: "React", percentage: 70 },
-        { pr: 200, img: firebase, name: "Firebase", percentage: 60 },
-        { pr: 200, img: express, name: "express.js", percentage: 60 },
-        { pr: 160, img: nodejs, name: "node.js", percentage: 80 },
-        { pr: 20, img: mongoDB, name: "mongoDB", percentage: 95 },
-        { pr: 24, img: github, name: "Github", percentage: 93 },
-        { pr: 40, img: netlify, name: "Netlify", percentage: 90 },
-        { pr: 120, img: gemini, name: "Gemini", percentage: 70 },
-        { pr: 20, img: tailwind, name: "Tailwind CSS", percentage: 95 },
+        { img: html, name: "HTML", percentage: 90 },
+        { img: css, name: "CSS", percentage: 75 },
+        { img: js, name: "JS", percentage: 70 },
+        { img: axios, name: "Axios", percentage: 95 },
+        { img: jwt, name: "JWT", percentage: 92 },
+        { img: react, name: "React", percentage: 70 },
+        { img: firebase, name: "Firebase", percentage: 60 },
+        { img: express, name: "express.js", percentage: 60 },
+        { img: nodejs, name: "node.js", percentage: 80 },
+        { img: mongoDB, name: "mongoDB", percentage: 95 },
+        { img: github, name: "Github", percentage: 93 },
+        { img: netlify, name: "Netlify", percentage: 90 },
+        { img: gemini, name: "Gemini", percentage: 70 },
+        { img: motionLogo, name: "Motion", percentage: 75 },
+        { img: tailwind, name: "Tailwind CSS", percentage: 95 },
     ];
 
     return (

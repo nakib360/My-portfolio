@@ -27,7 +27,7 @@ const Services = () => {
         {
             icon: TbApi,
             title: 'API Development & Integration',
-            description: 'Custom REST or GraphQL APIs, third-party integrations like Stripe, Google Maps, etc.'
+            description: 'Custom REST APIs, third-party integrations like Stripe, Google Maps, etc.'
         },
         {
             icon: MdDashboardCustomize,
@@ -44,11 +44,11 @@ const Services = () => {
             title: 'E-commerce Development',
             description: 'Complete online store with cart, checkout, and payment gateway integration.'
         },
-        {
-            icon: IoChatbubblesSharp,
-            title: 'Real-time Chat & Notifications',
-            description: 'Socket.io or Firebase-based live chat and instant notification systems.'
-        },
+        // {
+        //     icon: IoChatbubblesSharp,
+        //     title: 'Real-time Chat & Notifications',
+        //     description: 'Socket.io or Firebase-based live chat and instant notification systems.'
+        // },
         {
             icon: MdWeb,
             title: 'Portfolio / Landing Page Design',
@@ -59,15 +59,15 @@ const Services = () => {
             title: 'Bug Fixing & Optimization',
             description: 'Fix UI, backend, or performance issues and optimize existing MERN projects.'
         },
-        {
-            icon: BiData,
-            title: 'Database Design & Management',
-            description: 'Design, model, and optimize MongoDB databases for performance and scalability.'
-        },
+        // {
+        //     icon: BiData,
+        //     title: 'Database Design & Management',
+        //     description: 'Design, model, and optimize MongoDB databases for performance and scalability.'
+        // },
         {
             icon: FaCloudUploadAlt,
             title: 'Deployment & Hosting',
-            description: 'Deploy apps on Vercel, Render, or AWS with CI/CD pipeline setup.'
+            description: 'Deploy apps on Vercel, Render, Firebase, Netlify etc.'
         }
     ]
 
@@ -81,7 +81,7 @@ const Services = () => {
                     transition={{ duration: 2, ease: 'easeInOut' }}
                     className="border border-x-0 border-b-0 border-t border-blue-700"
                 />
-                <p className={"whitespace-nowrap text-sm md:text-xl cursor-default text-blue-500 font-semibold"}>Services i provide</p>
+                <p className={"whitespace-nowrap text-sm md:text-xl cursor-default text-blue-500 font-semibold"}>Services I provide</p>
 
                 <motion.hr
                     initial={{ width: 0, originX: 1 }}

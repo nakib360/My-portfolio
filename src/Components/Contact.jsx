@@ -67,7 +67,7 @@ const Contact = () => {
 
         {/* name */}
         <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }} className="space-y-2">
-          <p className="text-xs">Type your name hare</p>
+          <p className="text-xs">Type your name here</p>
           <div className="relative rounded-xl p-3 bg-blue-400/10">
             <input type="text" name="name" className=" placeholder:text-xs placeholder:text-gray-400 focus:outline-none w-full text-xs" placeholder="Your name" />
             <ShineBorder shineColor="blue" />
@@ -76,7 +76,7 @@ const Contact = () => {
 
         {/* gmail */}
         <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.7 }} viewport={{ once: true }} className="space-y-2">
-          <p className="text-xs">Type your gmail hare</p>
+          <p className="text-xs">Type your gmail here</p>
           <div className="relative rounded-xl p-3 bg-blue-400/10">
             <input type="text" name="email" className=" placeholder:text-xs placeholder:text-gray-400 focus:outline-none w-full text-xs" placeholder="Your gmail" />
             <ShineBorder shineColor="blue" />
@@ -108,7 +108,7 @@ const Contact = () => {
       <AnimatePresence>
         {
           showToast && (
-            <motion.div initial={{ y: -40, opacity: 0, scale: 0.5 }} animate={{ y: 0, opacity: 1, scale: 1 }} exit={{ y: -40, opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className="fixed top-5 left-1/2 -translate-x-1/2">
+            <motion.div initial={{ y: -40, opacity: 0, scale: 0.5 }} animate={{ y: 0, opacity: 1, scale: 1 }} exit={{ y: -40, opacity: 0, scale: 0.5 }} transition={{ duration: 0.5 }} className="fixed z-50 top-5 left-1/2 -translate-x-1/2">
               <div className="relative rounded-xl">
                 <div className="p-4 backdrop-blur-sm bg-white/7 rounded-xl w-[90vw] md:w-lg z-50 text-sm flex items-center justify-between">
                   <div className="flex items-center gap-3">
