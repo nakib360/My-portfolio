@@ -1,6 +1,5 @@
 //eslint-disable-next-line
 import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
 import html from "../assets/HTML.png";
 import css from "../assets/CSS.png";
 import js from "../assets/JS.png";
@@ -17,6 +16,7 @@ import gemini from "../assets/Gemini.png";
 import motionLogo from "../assets/motion.png"
 import tailwind from "../assets/Tailwind_CSS.png";
 import SkillItem from "./SkillItem";
+import Marquee from "./Marquee";
 
 const Skills = () => {
     const skills = [
@@ -41,6 +41,7 @@ const Skills = () => {
         <div className="py-10">
             <Marquee className="gap-5 overflow-hidden">
                 <motion.div className="flex gap-5 items-center py-10">
+                    
                     {skills.map((skill, idx) => (
                         <motion.img
                             key={idx}
