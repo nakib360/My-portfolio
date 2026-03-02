@@ -15,7 +15,7 @@ const Projects = () => {
         { img: jobStock, repo: "https://github.com/nakib360/Jobstock-full-stack-website-.git", LiveLink: "https://job-stock-668d6.web.app", SiteName: "JOB-Stock", Description: "Full‑stack job marketplace where candidates submit resumes and track applications with real‑time updates." },
         { img: sportStore, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://sport-store-af469.web.app/", SiteName: "Sport Shop", Description: "End‑to‑end e‑commerce experience for sports gear, featuring filtered search, cart, and secure checkout flows." },
         { img: NA_Ai, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "Multimodal generative assistant combining Gemini and ChatGPT so users can ask anything via text or voice." },
-        { img: NA_Ai, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "Portfolio site for S M Rafid Ayman, spotlighting his Bangladesh & International based graphics design work and contact options." }
+        { img: Rafid, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "Portfolio site for S M Rafid Ayman, spotlighting his Bangladesh & International based graphics design work and contact options." }
     ];
 
     return (
