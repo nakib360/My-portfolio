@@ -4,6 +4,7 @@ import { ShineBorder } from "./ui/shine-border";
 import jobStock from "../assets/jobstock.png"
 import sportStore from "../assets/sportstore.png"
 import NA_Ai from "../assets/NA Ai.jpg"
+import Rafid from "../assets/S M Rafid Ayman.png";
 // eslint-disable-next-line
 import { easeIn, motion } from "framer-motion";
 
@@ -11,9 +12,10 @@ const Projects = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const projects = [
-        { img: jobStock, repo: "https://github.com/nakib360/Jobstock-full-stack-website-.git", LiveLink: "https://job-stock-668d6.web.app", SiteName: "JOB-Stock", Description: "It's a full stack Website. It's a job submition and apply related website." },
-        { img: sportStore, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://sport-store-af469.web.app/", SiteName: "Sport Shop", Description: "It's a full stack Website. A men can find here any type of sports equipment." },
-        { img: NA_Ai, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "It's a Multi modal genarative ai. An User can ask here any type of question using both gemini and chatGPT" },
+        { img: jobStock, repo: "https://github.com/nakib360/Jobstock-full-stack-website-.git", LiveLink: "https://job-stock-668d6.web.app", SiteName: "JOB-Stock", Description: "Full‑stack job marketplace where candidates submit resumes and track applications with real‑time updates." },
+        { img: sportStore, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://sport-store-af469.web.app/", SiteName: "Sport Shop", Description: "End‑to‑end e‑commerce experience for sports gear, featuring filtered search, cart, and secure checkout flows." },
+        { img: NA_Ai, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "Multimodal generative assistant combining Gemini and ChatGPT so users can ask anything via text or voice." },
+        { img: NA_Ai, repo: "https://github.com/nakib360/sport-store.git", LiveLink: "https://na--ai.web.app/", SiteName: "NA Ai", Description: "Portfolio site for S M Rafid Ayman, spotlighting his Bangladesh & International based graphics design work and contact options." }
     ];
 
     return (
