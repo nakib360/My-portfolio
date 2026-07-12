@@ -1,17 +1,16 @@
 //eslint-disable-next-line
 import { motion, AnimatePresence, scale } from "framer-motion"
 import { ShineBorder } from "./ui/shine-border";
-import emailjs from '@emailjs/browser';
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { TbCircleDashedCheck } from "react-icons/tb";
 import { TbCircleDashedX } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
+import axios from "axios";
 
 const Contact = () => {
   const [showToast, setShowToast] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-
-  const form = useRef();
+  const [pending, setPending] = useState(false);
 
   useEffect(() => {
     if (showToast) {
@@ -21,25 +20,33 @@ const Contact = () => {
 
       return () => clearTimeout(timer);
     }
-  }, [showToast])
+  }, [showToast]);
 
-  const sendEmail = (e) => {
+  const contactData = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
-        publicKey: import.meta.env.VITE_PUBLIC_KEY,
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    const access_key = "cbfde203-2e68-4f04-a5c0-fba96183c27a";
+
+    if(!name.trim() || !email.trim() || !message.trim()){
+      setPending(false);
+      return;
+    }else{
+      axios.post("https://api.web3forms.com/submit", {
+        access_key, name, email, message
       })
-      .then((res) => {
-        console.log('SUCCESS!', res);
-        setShowToast(true);
-        res.status === 200 ? setIsSuccess(true) : setIsSuccess(false);
-      }
-      )
-      .catch((error) => {
-        console.log('FAILED...', error);
-      })
-  };
+        .then(data => {
+          if (data.status === 200) {
+            setIsSuccess(true);
+          }
+          setShowToast(true)
+          e.target.reset();
+          setPending(false);
+        });
+    }
+  }
 
   return (
     <div className="p-5 md:p-10">
@@ -63,7 +70,7 @@ const Contact = () => {
       </div>
 
       {/* form */}
-      <form ref={form} onSubmit={sendEmail} className="max-w-xl mx-auto space-y-5 my-10">
+      <form onSubmit={contactData} className="max-w-xl mx-auto space-y-5 my-10">
 
         {/* name */}
         <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }} className="space-y-2">
@@ -102,7 +109,11 @@ const Contact = () => {
         </motion.div>
 
         {/* submit */}
-        <motion.button type="submit" initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }} viewport={{ once: true }} className="text-sm bg-blue-600 p-4 rounded-xl w-full max-w-xl shadow-md hover:shadow-blue-500/60 hover:shadow-xl transition-shadow duration-300">Submit</motion.button>
+        <motion.button type="submit" onClick={() => setPending(true)} initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 1 }} viewport={{ once: true }} className="cursor-pointer flex justify-center items-center text-sm bg-blue-600 p-4 rounded-xl w-full max-w-xl shadow-md hover:shadow-blue-500/60 hover:shadow-xl transition-shadow duration-300">
+          {
+            pending ? <div className="m-0.5 w-4 h-4 rounded-full border-2 border-white border-t-transparent animate-spin"></div> : "Submit"
+          }
+        </motion.button>
       </form>
 
       <AnimatePresence>
