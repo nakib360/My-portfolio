@@ -68,9 +68,9 @@ const About = () => {
                             viewport={{ once: true }}
                             className="flex items-center gap-4"
                         >
-                            <FaGithub onClick={() => window.open("https://github.com/nakib360", "_blank")} className="hover:text-blue-400 md:text-2xl" />
-                            <FaFacebook onClick={() => window.open("https://www.facebook.com/share/1Czo8TDz4r/", "_blank")} className="hover:text-blue-400 md:text-2xl" />
-                            <FaLinkedin onClick={() => window.open("https://www.linkedin.com/in/muhammad-nakib-uddin-565b61381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank")} className="hover:text-blue-400 md:text-2xl" />
+                            <FaGithub onClick={() => window.open("https://github.com/nakib360", "_blank")} className="hover:text-blue-400 md:text-2xl cursor-pointer" />
+                            <FaFacebook onClick={() => window.open("https://www.facebook.com/share/1Czo8TDz4r/", "_blank")} className="hover:text-blue-400 md:text-2xl cursor-pointer" />
+                            <FaLinkedin onClick={() => window.open("https://www.linkedin.com/in/muhammad-nakib-uddin-565b61381?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank")} className="hover:text-blue-400 cursor-pointer md:text-2xl" />
                         </motion.div>
 
                         <motion.button
