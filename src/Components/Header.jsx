@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
 import { Link, NavLink } from "react-router";
-import nakib360Logo from "../assets/NakibLogo.svg"
+import nakib360Logo from "../assets/nakib360's logo.svg"
 // eslint-disable-next-line
 import { motion, AnimatePresence } from "framer-motion";
 

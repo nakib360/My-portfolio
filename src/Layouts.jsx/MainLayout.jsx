@@ -1,14 +1,23 @@
 import { Outlet } from "react-router";
 import Header from "../Components/Header";
+import { BackgroundBeams } from "../components/ui/beams";
 
 const MainLayout = () => {
   return (
-    <div className="bg-linear-to-r from-[#211832] to-[#1e3a8a] min-h-screen text-white overflow-x-hidden">
-      <Header/>
-      <Outlet/>
-      <footer>
-        <p className="text-center text-xs text-gray-400">Nakib 360 All write resurved.</p>
-      </footer>
+    <div className="relative min-h-screen overflow-hidden bg-neutral-950">
+      {/* Beam background - stays behind everything */}
+      <BackgroundBeams />
+
+      {/* Actual page content - above the beams */}
+      <div className="relative z-10 min-h-screen text-white">
+        <Header />
+        <Outlet />
+        <footer>
+          <p className="text-center text-xs text-gray-400">
+            Nakib 360 All rights reserved.
+          </p>
+        </footer>
+      </div>
     </div>
   );
 };
